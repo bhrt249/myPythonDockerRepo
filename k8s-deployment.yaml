@@ -3,7 +3,12 @@ kind: Deployment
 metadata:
   name: my-python-deployment
 spec:
-  replicas: 3
+  replicas: 3 
+  strategy:  
+  type: RollingUpdate
+  rollingUpdate:
+      maxSurge: 2        
+      maxUnavailable: 0  
   selector:
     matchLabels:
       app: python-app
