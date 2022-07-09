@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-python-app
-        image: bhrtsharma249/myapp-july22
+        image: bhrtsharma249/bs-july20
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
